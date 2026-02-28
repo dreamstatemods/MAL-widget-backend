@@ -1,0 +1,14 @@
+{
+  "name": "mal-widget-backend",
+  "version": "1.0.0",
+  "description": "A Cloudflare Worker backend for real-time MyAnimeList data. Combines MAL list endpoints for live recent activity with Jikan for stats, profile, and favorites.",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "keywords": ["myanimelist", "mal", "cloudflare-workers", "widget", "anime", "manga"],
+  "author": "",
+  "license": "MIT",
+  "type": "module"
+}

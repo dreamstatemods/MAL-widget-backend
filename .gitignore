@@ -1,0 +1,34 @@
+# Node modules (if you ever install Wrangler locally)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Build artifacts (Wrangler may create these)
+dist/
+worker/
+.build/
+
+# Environment files (if you ever add secrets)
+.env
+.env.*
+*.local
+
+# Cloudflare Wrangler cache
+.wrangler/
+
+# Backup files created by editors
+*.bak
+*.tmp
+*~
