@@ -221,7 +221,7 @@ crons = ["0 3 * * *", "0 15 * * *"]
 
 Secrets are set via the Wrangler CLI so they're stored securely and never touch your codebase or git history. Run each command and paste the value when prompted.
 
-**Trello version (`index.js`):**
+**Trello version (`index_trello.js`):**
 ```bash
 wrangler secret put TRELLO_KEY
 wrangler secret put TRELLO_TOKEN
@@ -234,13 +234,13 @@ https://trello.com/b/xxxxxxxx/your-board-name.json
 ```
 Open that in your browser, then Ctrl+F for `"lists"` — you'll see an array of list objects, each with an `"id"` field. Copy the `"id"` of whichever list you want cards posted to and paste it into the `LIST_ID` value in the code.
 
-**Discord version (`worker_public.js`):**
+**Discord version (`index_discord.js`):**
 ```bash
 wrangler secret put DISCORD_WEBHOOK
 ```
 Create a webhook in your server under **Server Settings → Integrations → Webhooks → New Webhook**, then copy the URL.
 
-**Simple version (`worker_simple.js`):**
+**Simple version (`index_simple.js`):**
 
 No secrets needed — skip this step entirely.
 
